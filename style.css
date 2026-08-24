@@ -82,16 +82,17 @@
 .inventory-ui strong{font:10px 'DM Mono',monospace;color:var(--green)}
 .inventory-ui i{height:20px;background:linear-gradient(90deg,var(--green),#31442f);display:block;grid-column:1 / -1}
 .inventory-ui i:nth-of-type(2){width:70%}.inventory-ui i:nth-of-type(3){width:48%}
-.dashboard-preview {
+
+.dashboard-placeholder {
   width: 100%;
-  margin-top: 32px;
-  border: 1px solid var(--border);
-  background: #0b0d0c;
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  background: #0b100d;
   overflow: hidden;
   border-radius: 8px;
 }
 
-.dashboard-preview img {
+.dashboard-placeholder img {
   display: block;
   width: 100%;
   height: auto;
@@ -129,17 +130,18 @@
   .case-block h2{font-size:25px}
   .result-hero{flex-direction:column;gap:5px}
   .result-hero strong{font-size:42px}
-  .dashboard-placeholder{height:250px}
 }
 
+
 @media (max-width: 768px) {
-  .dashboard-preview {
-    margin-top: 24px;
+  .dashboard-placeholder {
+    margin-top: 20px;
     border-radius: 6px;
   }
 
-  .dashboard-preview img {
+  .dashboard-placeholder img {
     width: 100%;
     height: auto;
   }
 }
+
