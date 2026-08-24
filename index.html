@@ -1,27 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheet/output.css">
-  <title>Mr Ali</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="mr.Ali — Data Analyst portfolio." />
+  <title>mr.Ali — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home"><span class="brand-mark">/</span>mr.Ali</a>
 
-<body class="px-3">
-  <div class="flex md:items-center justify-center flex-col h-full">
-    <h1 class="py-4 text-2xl font-bold animate-pulse">My Portfolio is Under Construction 🚧
-    </h1>
-    <h3 class="pt-5 text-xl font-semibold">Hi, I’m Ali – an Aspiring Data Analyst.
-      I’m working on an awesome portfolio to showcase my projects. Stay tuned!
-    </h3>
-    <div class="Contact Links flex flex-col py-6">
-      <h2 class="Contact Links font-bold text-xl pb-3">Contact Links</h2>
-      <a class="font-semibold" href="mailto:mrali9132@gmail.com">Email</a>
-      <a class="font-semibold"  href="https://www.linkedin.com/in/mr-ali123/">LinkedIn</a>
-      <a class="font-semibold"  href="https://github.com/MrAli-a11">Github</a>
-    </div>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="#home"><span>#</span>home</a>
+        <a class="nav-link" href="#work"><span>#</span>work</a>
+        <a class="nav-link" href="#about"><span>#</span>about-me</a>
+        <a class="nav-link" href="#contact"><span>#</span>contact</a>
+        <button class="lang-btn" type="button" aria-label="Language selector">EN <span>⌄</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-pad">
+        <div class="hero-copy">
+          <p class="hero-kicker">Hello, I'm mr.Ali</p>
+          <h1>mr.Ali is a <span>data analyst</span></h1>
+          <p class="hero-subtitle">I turn raw data into clear insights, useful dashboards and decisions that actually matter.</p>
+          <a class="outline-btn" href="#contact">Contact me!!</a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-grid"></div>
+          <div class="hero-dots dots-one"></div>
+          <div class="hero-dots dots-two"></div>
+          <div class="hero-card hero-card-main">
+            <div class="hero-card-head"><span></span><span></span><span></span></div>
+            <div class="chart-area">
+              <div class="bar b1"></div>
+              <div class="bar b2"></div>
+              <div class="bar b3"></div>
+              <div class="bar b4"></div>
+              <div class="bar b5"></div>
+              <div class="bar b6"></div>
+            </div>
+            <div class="hero-card-line"><span></span><span></span><span></span></div>
+          </div>
+          <div class="hero-badge">★ available for work</div>
+        </div>
+      </section>
+
+      <section class="quote-wrap">
+        <div class="quote-box">“Without data you're just another person with an opinion.” <span>— W. Edwards Deming</span></div>
+      </section>
+
+      <section id="work" class="section section-pad">
+        <div class="section-heading">
+          <div><span>#</span><h2>projects</h2></div>
+          <a href="#contact">View all ~~&gt;</a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview preview-sales"><div class="preview-title">SALES DASHBOARD</div><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="tech-row"><span>Excel</span><span>SQL</span><span>Power BI</span></div>
+            <div class="project-body"><h3>Sales Performance Dashboard</h3><p>Dummy project — replace with your real sales dashboard later.</p><div class="project-links"><a href="#">Live &lt;~&gt;</a><a href="#">Github &lt;~&gt;</a></div></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-ecommerce"><div class="preview-title">E-COMMERCE ANALYSIS</div><div class="mini-line"></div><div class="mini-pills"><span></span><span></span><span></span></div></div>
+            <div class="tech-row"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>SQL</span></div>
+            <div class="project-body"><h3>E-commerce Customer Analysis</h3><p>Dummy project — replace with your customer/retention analysis.</p><div class="project-links"><a href="#">Live &lt;~&gt;</a><a href="#">Github &lt;~&gt;</a></div></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-finance"><div class="preview-title">FINANCE REPORT</div><div class="donut"></div><div class="report-lines"><span></span><span></span><span></span></div></div>
+            <div class="tech-row"><span>Power BI</span><span>DAX</span><span>Excel</span></div>
+            <div class="project-body"><h3>Finance KPI Report</h3><p>Dummy project — replace with your finance / KPI case study.</p><div class="project-links"><a href="#">Live &lt;~&gt;</a><a href="#">Github &lt;~&gt;</a></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-pad skills-section">
+        <div class="section-heading single"><div><span>#</span><h2>skills</h2></div></div>
+        <div class="skills-layout">
+          <div class="skill-art" aria-hidden="true">
+            <div class="box box-a"></div><div class="box box-b"></div><div class="box box-c"></div>
+            <div class="skill-dots"></div>
+          </div>
+          <div class="skill-groups">
+            <div class="skill-group"><h4>Languages</h4><div class="skill-list"><span>Python</span><span>SQL</span></div></div>
+            <div class="skill-group"><h4>Analytics</h4><div class="skill-list"><span>Statistics</span><span>EDA</span><span>Data Cleaning</span><span>Data Analysis</span></div></div>
+            <div class="skill-group"><h4>Visualization</h4><div class="skill-list"><span>Power BI</span><span>Tableau</span><span>Matplotlib</span><span>Seaborn</span></div></div>
+            <div class="skill-group"><h4>Tools</h4><div class="skill-list"><span>Excel</span><span>Git</span><span>GitHub</span><span>Jupyter</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-pad about-section">
+        <div class="section-heading single"><div><span>#</span><h2>about-me</h2></div></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>Hello, I'm <strong>mr.Ali</strong>!</p>
+            <p>I'm an aspiring data analyst focused on turning messy datasets into useful insights. I work with spreadsheets, SQL, Python and BI tools to clean data, explore patterns and build dashboards.</p>
+            <p>This section is intentionally editable. Replace this text with your real story, experience and the kind of analyst role you're targeting.</p>
+            <a class="outline-btn" href="#contact">Read more -&gt;</a>
+          </div>
+          <div class="about-art" aria-hidden="true">
+            <div class="about-frame"></div>
+            <div class="about-dots"></div>
+            <div class="about-mark">//</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-pad contact-section">
+        <div class="section-heading single"><div><span>#</span><h2>contact</h2></div></div>
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <p>I'm open to junior data analyst, reporting and analytics opportunities.</p>
+            <p>For freelance work, collaboration or questions, feel free to reach out.</p>
+          </div>
+          <div class="contact-box">
+            <h4>Message me here</h4>
+            <a href="mailto:mrali9132@gmail.com">mrali9132@gmail.com</a>
+            <div class="contact-socials"><a href="https://github.com/mr.Ali11" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/mr.Ali/linkedin" target="_blank" rel="noreferrer">LinkedIn</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-pad">
+      <div class="footer-main"><div><a class="brand" href="#home"><span class="brand-mark">/</span>mr.Ali</a><a class="footer-email" href="mailto:mrali9132@gmail.com">mrali9132@gmail.com</a></div><p>Data Analyst</p></div>
+      <div class="footer-bottom"><div><span>Media</span><div class="footer-socials"><a href="https://github.com/mr.Ali11" target="_blank" rel="noreferrer">GH</a><a href="https://www.linkedin.com/in/mr.Ali/linkedin" target="_blank" rel="noreferrer">LI</a></div></div><p>© 2026 mr.Ali. Built for Netlify.</p></div>
+    </footer>
   </div>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>
